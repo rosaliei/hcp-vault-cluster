@@ -10,17 +10,17 @@ This Terraform configuration provisions a production-ready HashiCorp Vault clust
 ┌─────────────────────────────────────────────────────────────┐
 │                    HashiCorp Cloud Platform                 │
 │  ┌─────────────────────────────────────────────────────────┐│
-│  │                HCP Virtual Network (HVN)               ││
-│  │                   172.25.16.0/20                       ││
+│  │                HCP Virtual Network (HVN)                ││
+│  │                   172.25.16.0/20                        ││
 │  │                                                         ││
-│  │  ┌───────────────────────────────────────────────────┐ ││
-│  │  │              HCP Vault Cluster                    │ ││
-│  │  │                                                   │ ││
-│  │  │  • Managed Control Plane                         │ ││
-│  │  │  • Automated Backups                             │ ││
-│  │  │  • Built-in Monitoring                           │ ││
-│  │  │  • Enterprise Features                           │ ││
-│  │  └───────────────────────────────────────────────────┘ ││
+│  │  ┌───────────────────────────────────────────────────┐  ││
+│  │  │              HCP Vault Cluster                    │  ││
+│  │  │                                                   │  ││
+│  │  │  • Managed Control Plane                          │  ││
+│  │  │  • Automated Backups                              │  ││
+│  │  │  • Built-in Monitoring                            │  ││
+│  │  │  • Enterprise Features                            │  ││
+│  │  └───────────────────────────────────────────────────┘  ││
 │  └─────────────────────────────────────────────────────────┘│
 └──────────────────────┬──────────────────────────────────────┘
                        │
