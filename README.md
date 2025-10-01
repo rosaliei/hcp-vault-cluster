@@ -11,7 +11,8 @@ This Terraform configuration provisions a production-ready HashiCorp Vault clust
 │                    HashiCorp Cloud Platform                 │
 │  ┌─────────────────────────────────────────────────────────┐│
 │  │                HCP Virtual Network (HVN)               ││
-│  │                172.25.16.0/20                          ││
+│  │                   172.25.16.0/20                       ││
+│  │                                                         ││
 │  │  ┌───────────────────────────────────────────────────┐ ││
 │  │  │              HCP Vault Cluster                    │ ││
 │  │  │                                                   │ ││
@@ -21,18 +22,20 @@ This Terraform configuration provisions a production-ready HashiCorp Vault clust
 │  │  │  • Enterprise Features                           │ ││
 │  │  └───────────────────────────────────────────────────┘ ││
 │  └─────────────────────────────────────────────────────────┘│
-└─────────────────────────────────────────────────────────────┘
-              │
-              │ API/UI Access
-              │
-    ┌─────────▼─────────┐
-    │   Client Access   │
-    │                   │
-    │ • Vault CLI       │
-    │ • REST API        │
-    │ • Web UI          │
-    │ • Applications    │
-    └───────────────────┘
+└──────────────────────┬──────────────────────────────────────┘
+                       │
+                       │ HTTPS API/UI Access
+                       │ Port 8200
+                       │
+         ┌─────────────▼─────────────┐
+         │       Client Access       │
+         │                           │
+         │  • Vault CLI              │
+         │  • REST API Clients       │
+         │  • Web UI Browser         │
+         │  • Application SDKs       │
+         │                           │
+         └───────────────────────────┘
 ```
 
 ## Solution Components
