@@ -1,0 +1,31 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# HCP credentials and sensitive files
+hcp-credentials.json
+hcp-service-key.json
+.hcp/
+service-account-key.json
+
+# Log files
+*.log
+logs/
+terraform.log
+crash.log
+crash.*.log
+
+# Local terraform modules
+.terraform.d/
